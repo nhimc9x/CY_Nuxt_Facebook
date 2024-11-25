@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply font-poppins text-[16px];
+}
+
+.wrapper {
+    @apply max-w-[1464px] mx-auto px-4;
+}
+
+.img-cover {
+    @apply size-full object-cover;
+}
+
+:root {
+    --background: #f2f4f7;
+    --primary: #ffffff;
+    --secondary: #e6e8ea;
+    --tertiary: #e4e6e9;
+    --text-color: #080809;
+    --highlight: #0861f2;
+}
+
+[data-theme="dark"] {
+    --background: #1c1c1d;
+    --primary: #252728;
+    --secondary: #333334;
+    --tertiary: #484848;
+    --text-color: #fafafa;
+    --highlight: #2176ff;
+}
